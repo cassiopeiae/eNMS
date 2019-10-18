@@ -138,18 +138,7 @@ class AdministrationController(BaseController):
             Session.commit()
         new_names = {}
         for service in fetch_all("service"):
-            new_name = new_names[service.name] = service.build_name()
-            service.name = new_name
-        Session.commit()
-        try:
-            for service in fetch_all("service"):
-                for workflow_name in deepcopy(service.positions):
-                    if workflow_name not in new_names:
-                        service.positions.pop(workflow_name)
-                        continue
-                    service.positions[new_names[workflow_name]] = service.positions[workflow_name]
-        except Exception as exc:
-            info(exc)
+            service.set_name()
         Session.commit()
         return status
 
