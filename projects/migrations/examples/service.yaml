@@ -11,6 +11,7 @@
   dict_match: {}
   display_only_failed_nodes: true
   events: []
+  hidden: true
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -22,7 +23,7 @@
   max_processes: 5
   maximum_runs: 1
   multiprocessing: false
-  name: '[Shared] Start'
+  name: Start
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -50,25 +51,11 @@
     Workflow with device and value iteration: [0, 0]
     Workflow with iteration target subworkflows: [-118, 4]
     Workflow with iteration targets: [0, 0]
-    '[Regression Workflow F S1: Subworkflow of Workflow] Regression Workflow 7: Payload Extraction & Validation': [
-      -131, -293]
-    '[Regression Workflow F S1: Subworkflow of Workflow] Regression Workflow 8: Payload Extraction with Operations': [
-      -332, -106]
-    '[Regression Workflow F S1: Subworkflow of Workflow] Regression Workflow B: Napalm getters validation': [
-      -555, 85]
-    '[Regression Workflow F: Workflow of Workflows] Regression Workflow 5: VRF creation and deletion with Napalm': [
-      121, -362]
-    '[Regression Workflow F: Workflow of Workflows] Regression Workflow F S1: Subworkflow of Workflow': [
-      -441, 133]
-    '[Regression Workflow F: Workflow of Workflows] Regression Workflow F S2: Access Variables from Parent Workflow': [
-      -274, 39]
     iteration_devices_workflow: ['-164', '15']
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: Start
   send_notification: false
   send_notification_method: mail
-  shared: true
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -89,6 +76,7 @@
   dict_match: {}
   display_only_failed_nodes: true
   events: []
+  hidden: true
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -100,7 +88,7 @@
   max_processes: 5
   maximum_runs: 1
   multiprocessing: false
-  name: '[Shared] End'
+  name: End
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -131,25 +119,11 @@
     Workflow with device and value iteration: [500, 0]
     Workflow with iteration target subworkflows: [617, 0]
     Workflow with iteration targets: [500, 0]
-    '[Regression Workflow F S1: Subworkflow of Workflow] Regression Workflow 7: Payload Extraction & Validation': [
-      415, 361]
-    '[Regression Workflow F S1: Subworkflow of Workflow] Regression Workflow 8: Payload Extraction with Operations': [
-      -326, 234]
-    '[Regression Workflow F S1: Subworkflow of Workflow] Regression Workflow B: Napalm getters validation': [
-      -534, 178]
-    '[Regression Workflow F: Workflow of Workflows] Regression Workflow 5: VRF creation and deletion with Napalm': [
-      648, -171]
-    '[Regression Workflow F: Workflow of Workflows] Regression Workflow F S1: Subworkflow of Workflow': [
-      714, 151]
-    '[Regression Workflow F: Workflow of Workflows] Regression Workflow F S2: Access Variables from Parent Workflow': [
-      678, -24]
     iteration_devices_workflow: ['651', '20']
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: End
   send_notification: false
   send_notification_method: mail
-  shared: true
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -170,6 +144,7 @@
   dict_match: {}
   display_only_failed_nodes: true
   events: []
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -190,10 +165,8 @@
   positions: {}
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: mail
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -214,6 +187,7 @@
   dict_match: {}
   display_only_failed_nodes: true
   events: []
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -234,10 +208,8 @@
   positions: {}
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: slack_feedback_notification
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -258,6 +230,7 @@
   dict_match: {}
   display_only_failed_nodes: true
   events: []
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -278,10 +251,8 @@
   positions: {}
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: mattermost_feedback_notification
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -302,6 +273,7 @@
   dict_match: {}
   display_only_failed_nodes: true
   events: []
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -322,10 +294,8 @@
   positions: {}
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: cluster_monitoring
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -346,6 +316,7 @@
   dict_match: {}
   display_only_failed_nodes: true
   events: []
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -357,7 +328,7 @@
   max_processes: 5
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow 9: Configurations Backup] Push Configurations to Git'
+  name: Push Configurations to Git
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -367,10 +338,8 @@
     'Regression Workflow 9: Configurations Backup': [120, 83]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: Push Configurations to Git
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: true
   skip_query: ''
   time_between_retries: 10
@@ -399,6 +368,7 @@
   display_only_failed_nodes: true
   events: []
   exclusion_field: d
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   ip_address: 10.1.1.1
@@ -413,7 +383,7 @@
   max_processes: 5
   maximum_runs: 1
   multiprocessing: false
-  name: '[Shared] Example Service (does nothing)'
+  name: Example Service (does nothing)
   negative_logic: false
   notification_header: ''
   number_in_range: 7
@@ -426,10 +396,8 @@
   push_to_git: false
   regex: ''
   result_postprocessing: ''
-  scoped_name: Example Service (does nothing)
   send_notification: false
   send_notification_method: mail
-  shared: true
   skip: false
   skip_query: ''
   string1: cisco
@@ -453,6 +421,7 @@
   dict_match: {}
   display_only_failed_nodes: true
   events: []
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -467,7 +436,7 @@
   max_processes: 5
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow C: Advanced multiprocessing] napalm_configure_bgp_1'
+  name: napalm_configure_bgp_1
   negative_logic: false
   neighbor_ip: 100.1.2.1
   notification_header: ''
@@ -479,10 +448,8 @@
   push_to_git: false
   remote_as: 200
   result_postprocessing: ''
-  scoped_name: napalm_configure_bgp_1
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: true
   skip_query: ''
   time_between_retries: 10
@@ -506,6 +473,7 @@
   direction: get
   display_only_failed_nodes: true
   events: []
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -531,10 +499,8 @@
   protocol: scp
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: test_file_transfer_service
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   source_file: /media/sf_VM/eNMS/tests/file_transfer/a.bin
@@ -561,6 +527,7 @@
   dict_match: {}
   display_only_failed_nodes: true
   events: []
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -582,10 +549,8 @@
   protocol: scp
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: test_database_backup_service
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -612,6 +577,7 @@
   events: []
   fast_cli: false
   global_delay_factor: 1.0
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -623,7 +589,7 @@
   max_processes: 5
   maximum_runs: 1
   multiprocessing: true
-  name: '[Regression Workflow 9: Configurations Backup] Configuration Backup (Netmiko)'
+  name: Configuration Backup (Netmiko)
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -639,10 +605,8 @@
   regex_replace_2: ''
   regex_replace_3: ''
   result_postprocessing: ''
-  scoped_name: Configuration Backup (Netmiko)
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -666,6 +630,7 @@
   display_only_failed_nodes: true
   driver: eos
   events: []
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -677,7 +642,7 @@
   max_processes: 5
   maximum_runs: 1
   multiprocessing: true
-  name: '[Regression Workflow 9: Configurations Backup] Configuration Backup (NAPALM)'
+  name: Configuration Backup (NAPALM)
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -694,10 +659,8 @@
   regex_replace_2: ''
   regex_replace_3: ''
   result_postprocessing: ''
-  scoped_name: Configuration Backup (NAPALM)
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: true
   skip_query: ''
   time_between_retries: 10
@@ -730,6 +693,7 @@
   exit_config_mode: true
   fast_cli: true
   global_delay_factor: 1.0
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -741,7 +705,7 @@
   max_processes: 5
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow 4: VRF creation and deletion with Netmiko] netmiko_create_vrf_test'
+  name: netmiko_create_vrf_test
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -751,10 +715,8 @@
     'Regression Workflow 4: VRF creation and deletion with Netmiko': [-4, -120]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: netmiko_create_vrf_test
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   strip_command: false
@@ -791,6 +753,7 @@
   expect_string: ''
   fast_cli: true
   global_delay_factor: 1.0
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -802,7 +765,7 @@
   max_processes: 5
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow 4: VRF creation and deletion with Netmiko] netmiko_check_vrf_test'
+  name: netmiko_check_vrf_test
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -817,10 +780,8 @@
     iteration_devices_workflow: ['414', '-154']
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: netmiko_check_vrf_test
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   start_new_connection: false
@@ -856,6 +817,7 @@
   exit_config_mode: true
   fast_cli: true
   global_delay_factor: 1.0
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -867,7 +829,7 @@
   max_processes: 5
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow 4: VRF creation and deletion with Netmiko] netmiko_delete_vrf_test'
+  name: netmiko_delete_vrf_test
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -878,10 +840,8 @@
     'Regression Workflow 5: VRF creation and deletion with Napalm': ['0', '50']
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: netmiko_delete_vrf_test
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   strip_command: false
@@ -918,6 +878,7 @@
   expect_string: ''
   fast_cli: true
   global_delay_factor: 1.0
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -929,7 +890,7 @@
   max_processes: 5
   maximum_runs: 1
   multiprocessing: false
-  name: '[Shared] Netmiko: Check VRF (test) does not exist'
+  name: 'Netmiko: Check VRF (test) does not exist'
   negative_logic: true
   notification_header: ''
   number_of_retries: 2
@@ -942,10 +903,8 @@
     iteration_devices_workflow: ['337', '-145']
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: 'Netmiko: Check VRF (test) does not exist'
   send_notification: false
   send_notification_method: mail
-  shared: true
   skip: false
   skip_query: ''
   start_new_connection: true
@@ -974,6 +933,7 @@
   display_only_failed_nodes: true
   driver: eos
   events: []
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -985,7 +945,7 @@
   max_processes: 5
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow 5: VRF creation and deletion with Napalm] napalm_create_vrf_test'
+  name: napalm_create_vrf_test
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -994,14 +954,10 @@
   pools: []
   positions:
     'Regression Workflow 5: VRF creation and deletion with Napalm': [-301, -128]
-    '[Regression Workflow F: Workflow of Workflows] Regression Workflow 5: VRF creation and deletion with Napalm': [
-      298, -193]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: napalm_create_vrf_test
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -1026,6 +982,7 @@
   display_only_failed_nodes: true
   events: []
   headers: {}
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -1037,7 +994,7 @@
   max_processes: 5
   maximum_runs: 1
   multiprocessing: true
-  name: '[Shared] REST API: call *is_alive* endpoint'
+  name: 'REST API: call *is_alive* endpoint'
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -1056,10 +1013,8 @@
   push_to_git: false
   rest_url: http://127.0.0.1:5000/rest/is_alive
   result_postprocessing: ''
-  scoped_name: 'REST API: call *is_alive* endpoint'
   send_notification: false
   send_notification_method: mail
-  shared: true
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -1085,6 +1040,7 @@
   driver: eos
   events: []
   getters: [get_facts]
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -1096,7 +1052,7 @@
   max_processes: 5
   maximum_runs: 1
   multiprocessing: false
-  name: '[Shared] NAPALM: Get Facts'
+  name: 'NAPALM: Get Facts'
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -1110,10 +1066,8 @@
     'Regression Workflow F: Workflow of Workflows': [3, -51]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: 'NAPALM: Get Facts'
   send_notification: false
   send_notification_method: mail
-  shared: true
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -1138,6 +1092,7 @@
   driver: eos
   events: []
   getters: [get_interfaces]
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -1149,7 +1104,7 @@
   max_processes: 5
   maximum_runs: 1
   multiprocessing: false
-  name: '[Shared] NAPALM: Get interfaces'
+  name: 'NAPALM: Get interfaces'
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -1162,10 +1117,8 @@
     'Regression Workflow F: Workflow of Workflows': [-336, 217]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: 'NAPALM: Get interfaces'
   send_notification: false
   send_notification_method: mail
-  shared: true
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -1190,6 +1143,7 @@
   driver: eos
   events: []
   getters: [get_interfaces_ip]
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -1201,7 +1155,7 @@
   max_processes: 5
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow 3: Napalm getters (postprocessing)] get_interfaces_ip'
+  name: get_interfaces_ip
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -1214,10 +1168,8 @@
   push_to_git: false
   result_postprocessing: "# Will change the IPv6 of the Management Interface to ::1\r\
     \nresults[\"result\"][\"get_interfaces_ip\"][\"Management1\"][\"ipv6\"] = \"::1\""
-  scoped_name: get_interfaces_ip
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -1242,6 +1194,7 @@
   driver: eos
   events: []
   getters: [get_config]
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -1253,7 +1206,7 @@
   max_processes: 5
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow 3: Napalm getters (postprocessing)] get_config'
+  name: get_config
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -1265,10 +1218,8 @@
     'Regression Workflow F: Workflow of Workflows': [3, -51]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: get_config
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -1291,6 +1242,7 @@
   dict_match: {}
   display_only_failed_nodes: true
   events: []
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -1302,7 +1254,7 @@
   max_processes: 5
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow 3: Napalm getters (postprocessing)] process_payload1'
+  name: process_payload1
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -1313,10 +1265,8 @@
     'Regression Workflow F: Workflow of Workflows': [3, -51]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: process_payload1
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -1337,6 +1287,7 @@
   dict_match: {}
   display_only_failed_nodes: true
   events: []
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -1348,7 +1299,7 @@
   max_processes: 5
   maximum_runs: 1
   multiprocessing: false
-  name: '[Shared] Modify Payload for Iteration'
+  name: Modify Payload for Iteration
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -1361,10 +1312,8 @@
     Workflow with iteration target subworkflows: [283, -152]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: Modify Payload for Iteration
   send_notification: false
   send_notification_method: mail
-  shared: true
   skip: false
   skip_query: ''
   source_code: "# Interfaces 1\r\ntargets = ['Loopback101', 'Loopback15'] if device.name\
@@ -1403,6 +1352,7 @@
   expect_string: ''
   fast_cli: true
   global_delay_factor: 1.0
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: payload['variables']['devices']
@@ -1424,10 +1374,8 @@
     Iteration Services Test Workflow: ['-336', '11']
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: netmiko_python_defined_devices
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   start_new_connection: false
@@ -1465,6 +1413,7 @@
   expect_string: ''
   fast_cli: true
   global_delay_factor: 1.0
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -1486,10 +1435,8 @@
     'Regression Workflow E: Iteration Targets': [216, 129]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: Iterated_netmiko_service
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   start_new_connection: false
@@ -1527,6 +1474,7 @@
   expect_string: ''
   fast_cli: true
   global_delay_factor: 1.0
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -1538,7 +1486,7 @@
   max_processes: 5
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow 7: Payload Extraction & Validation] netmiko_show_ip_route'
+  name: netmiko_show_ip_route
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -1546,14 +1494,10 @@
   pools: []
   positions:
     'Regression Workflow 7: Payload Extraction & Validation': [49, -207]
-    '[Regression Workflow F S1: Subworkflow of Workflow] Regression Workflow 7: Payload Extraction & Validation': [
-      -11, -192]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: netmiko_show_ip_route
   send_notification: true
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   start_new_connection: false
@@ -1579,13 +1523,14 @@
   dict_match: {}
   display_only_failed_nodes: true
   events: []
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
   iteration_devices_property: ip_address
   iteration_values: ''
   iteration_variable_name: iteration_value
-  last_modified: '2019-10-13 18:36:38.551082'
+  last_modified: '2019-08-14 19:12:55.870709'
   mail_recipient: ''
   match1: ''
   match2: (\d.*)/32
@@ -1601,7 +1546,7 @@
   max_processes: 5
   maximum_runs: 1
   multiprocessing: true
-  name: '[Regression Workflow 7: Payload Extraction & Validation] Payload Extraction'
+  name: Payload Extraction
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -1612,17 +1557,13 @@
   pools: []
   positions:
     'Regression Workflow 7: Payload Extraction & Validation': [130, -95]
-    '[Regression Workflow F S1: Subworkflow of Workflow] Regression Workflow 7: Payload Extraction & Validation': [
-      315, -156]
   push_to_git: false
   query1: get_result("netmiko_show_ip_route", device.name)["success"]
   query2: get_result("netmiko_show_ip_route", device.name)["result"]
   query3: get_result("netmiko_show_ip_route", device=device.name)["result"]
   result_postprocessing: ''
-  scoped_name: Payload Extraction
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -1634,31 +1575,32 @@
   vendor: ''
   waiting_time: 0
 - color: '#D2E5FF'
-  content_match: "'1.1.1.1'  , '   2.2.2.2','    3.3.3.3'"
+  content_match: ''
   content_match_regex: false
-  conversion_method: text
+  conversion_method: none
   creator: admin
-  delete_spaces_before_matching: true
+  delete_spaces_before_matching: false
   description: Payload Validate Dict
   device_query: ''
   device_query_property: ip_address
   devices: []
-  dict_match: {}
+  dict_match:
+    value: [1.1.1.1, 2.2.2.2, 3.3.3.3]
   display_only_failed_nodes: true
   events: []
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
   iteration_devices_property: ip_address
   iteration_values: ''
   iteration_variable_name: iteration_value
-  last_modified: '2019-10-14 01:44:10.931975'
+  last_modified: '2019-08-14 19:35:35.605726'
   mail_recipient: ''
   max_processes: 5
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow 7: Payload Extraction & Validation] Payload Workflow:
-    Validate dict via results'
+  name: 'Payload Workflow: Validate dict via results'
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -1666,20 +1608,16 @@
   pools: []
   positions:
     'Regression Workflow 7: Payload Extraction & Validation': [-345, -11]
-    '[Regression Workflow F S1: Subworkflow of Workflow] Regression Workflow 7: Payload Extraction & Validation': [
-      -350, -21]
   push_to_git: false
-  query: get_result("Routing Table", device.name)["result"]["regex_variable"]
+  query: get_result("Payload Extraction", device.name)["result"]["regex_variable"]
   result_postprocessing: ''
-  scoped_name: 'Payload Workflow: Validate dict via results'
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   time_between_retries: 10
   type: payload_validation_service
-  validation_method: text
+  validation_method: dict_included
   vendor: Arista
   waiting_time: 0
 - color: '#D2E5FF'
@@ -1695,6 +1633,7 @@
   dict_match: {}
   display_only_failed_nodes: true
   events: []
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -1706,8 +1645,7 @@
   max_processes: 5
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow 7: Payload Extraction & Validation] Payload Workflow:
-    Validate text via results'
+  name: 'Payload Workflow: Validate text via results'
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -1715,15 +1653,11 @@
   pools: []
   positions:
     'Regression Workflow 7: Payload Extraction & Validation': [-233, 211]
-    '[Regression Workflow F S1: Subworkflow of Workflow] Regression Workflow 7: Payload Extraction & Validation': [
-      -239, 204]
   push_to_git: false
   query: get_result("Payload Extraction", device.name)["result"]["textfsm_variable"]["value"][0][1]
   result_postprocessing: ''
-  scoped_name: 'Payload Workflow: Validate text via results'
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -1745,6 +1679,7 @@
   display_only_failed_nodes: false
   driver: eos
   events: []
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -1756,7 +1691,7 @@
   max_processes: 50
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow 5: VRF creation and deletion with Napalm] napalm_rollback'
+  name: napalm_rollback
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -1765,14 +1700,10 @@
   pools: []
   positions:
     'Regression Workflow 5: VRF creation and deletion with Napalm': [360, 172]
-    '[Regression Workflow F: Workflow of Workflows] Regression Workflow 5: VRF creation and deletion with Napalm': [
-      85, 126]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: napalm_rollback
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -1807,6 +1738,7 @@
   expect_string: ''
   fast_cli: true
   global_delay_factor: 1.0
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -1818,7 +1750,7 @@
   max_processes: 50
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow 5: VRF creation and deletion with Napalm] netmiko_check_vrf_napalm'
+  name: netmiko_check_vrf_napalm
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -1828,14 +1760,10 @@
     'Regression Workflow 5: VRF creation and deletion with Napalm': [340, -110]
     'Regression Workflow A: get_var, set_var, get_result': ['266', '161']
     'Regression Workflow C: Advanced multiprocessing': [123, -187]
-    '[Regression Workflow F: Workflow of Workflows] Regression Workflow 5: VRF creation and deletion with Napalm': [
-      -317, -60]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: netmiko_check_vrf_napalm
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   start_new_connection: false
@@ -1873,6 +1801,7 @@
   expect_string: ''
   fast_cli: true
   global_delay_factor: 1.0
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -1884,7 +1813,7 @@
   max_processes: 50
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow 5: VRF creation and deletion with Napalm] netmiko_check_no_vrf_napalm'
+  name: netmiko_check_no_vrf_napalm
   negative_logic: true
   notification_header: ''
   number_of_retries: 0
@@ -1892,15 +1821,11 @@
   pools: []
   positions:
     'Regression Workflow 5: VRF creation and deletion with Napalm': [-275, 196]
-    '[Regression Workflow F: Workflow of Workflows] Regression Workflow 5: VRF creation and deletion with Napalm': [
-      583, 125]
     iteration_devices_workflow: ['245', '32']
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: netmiko_check_no_vrf_napalm
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   start_new_connection: false
@@ -1938,6 +1863,7 @@
   expect_string: ''
   fast_cli: false
   global_delay_factor: 1.0
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: get_var("test", device=parent_device.name)
@@ -1959,10 +1885,8 @@
     iteration_devices_workflow: ['-5', '-147']
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: Device_from_python_query
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   start_new_connection: false
@@ -1998,6 +1922,7 @@
   events: []
   fast_cli: false
   global_delay_factor: 1.0
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -2009,7 +1934,7 @@
   max_processes: 50
   maximum_runs: 2
   multiprocessing: false
-  name: '[Regression Workflow D: Prompts] Test Netmiko Prompt Service'
+  name: Test Netmiko Prompt Service
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -2022,10 +1947,8 @@
   response2: show vrf c
   response3: ''
   result_postprocessing: ''
-  scoped_name: Test Netmiko Prompt Service
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -2058,6 +1981,7 @@
   events: []
   fast_cli: false
   global_delay_factor: 1.0
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -2069,7 +1993,7 @@
   max_processes: 50
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow D: Prompts] Test netmiko prompts pass'
+  name: Test netmiko prompts pass
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -2082,10 +2006,8 @@
   response2: ''
   response3: ''
   result_postprocessing: ''
-  scoped_name: Test netmiko prompts pass
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -2108,6 +2030,7 @@
   dict_match: {}
   display_only_failed_nodes: false
   events: []
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -2119,8 +2042,7 @@
   max_processes: 50
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow A: get_var, set_var, get_result] Modify payload (no
-    device)'
+  name: Modify payload (no device)
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -2130,10 +2052,8 @@
     'Regression Workflow A: get_var, set_var, get_result': [-376, -138]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: Modify payload (no device)
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   source_code: "set_var(\"global_variable\", value=1050)\r\nset_var(\"variable\",\
@@ -2157,6 +2077,7 @@
   dict_match: {}
   display_only_failed_nodes: false
   events: []
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -2168,8 +2089,7 @@
   max_processes: 50
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow A: get_var, set_var, get_result] Modify payload (per
-    device)'
+  name: Modify payload (per device)
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -2179,10 +2099,8 @@
     'Regression Workflow A: get_var, set_var, get_result': [0, -144]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: Modify payload (per device)
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   source_code: "set_var(\"variable1\", 999, device=device.name)\r\nset_var(\"variable2\"\
@@ -2221,6 +2139,7 @@
   expect_string: ''
   fast_cli: true
   global_delay_factor: 1.0
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: get_var("iteration_device", section="pools", device=device.name)
@@ -2232,8 +2151,7 @@
   max_processes: 50
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow A: get_var, set_var, get_result] Show vrf with payload
-    helper'
+  name: Show vrf with payload helper
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -2243,10 +2161,8 @@
     'Regression Workflow A: get_var, set_var, get_result': [580, -81]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: Show vrf with payload helper
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   start_new_connection: false
@@ -2284,6 +2200,7 @@
   expect_string: ''
   fast_cli: false
   global_delay_factor: 1.0
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: get_var("iteration_simple", section="pools")
@@ -2295,8 +2212,7 @@
   max_processes: 50
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow A: get_var, set_var, get_result] Show vrf with python
-    query'
+  name: Show vrf with python query
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -2306,10 +2222,8 @@
     'Regression Workflow A: get_var, set_var, get_result': [609, 92]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: Show vrf with python query
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   start_new_connection: false
@@ -2347,6 +2261,7 @@
   expect_string: ''
   fast_cli: false
   global_delay_factor: 1.0
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -2358,8 +2273,7 @@
   max_processes: 50
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow A: get_var, set_var, get_result] show runtime with get_result
-    helper'
+  name: show runtime with get_result helper
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -2369,10 +2283,8 @@
     'Regression Workflow A: get_var, set_var, get_result': [-445, 128]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: show runtime with get_result helper
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   start_new_connection: false
@@ -2401,6 +2313,7 @@
   driver: eos
   events: []
   getters: [is_alive]
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -2412,7 +2325,7 @@
   max_processes: 50
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow B: Napalm getters validation] Getters Workflow: is alive'
+  name: 'Getters Workflow: is alive'
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -2421,14 +2334,10 @@
   pools: []
   positions:
     'Regression Workflow B: Napalm getters validation': [-405, -137]
-    '[Regression Workflow F S1: Subworkflow of Workflow] Regression Workflow B: Napalm getters validation': [
-      -415, -94]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: 'Getters Workflow: is alive'
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -2453,6 +2362,7 @@
   driver: eos
   events: []
   getters: [get_facts]
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -2464,8 +2374,7 @@
   max_processes: 50
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow B: Napalm getters validation] Getters Workflow: get
-    facts'
+  name: 'Getters Workflow: get facts'
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -2474,14 +2383,10 @@
   pools: []
   positions:
     'Regression Workflow B: Napalm getters validation': [18, -122]
-    '[Regression Workflow F S1: Subworkflow of Workflow] Regression Workflow B: Napalm getters validation': [
-      -2, -115]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: 'Getters Workflow: get facts'
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -2507,6 +2412,7 @@
   driver: eos
   events: []
   getters: [get_interfaces_ip]
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -2518,7 +2424,7 @@
   max_processes: 50
   maximum_runs: 1
   multiprocessing: false
-  name: '[Shared] Getters Workflow: Interface IP'
+  name: 'Getters Workflow: Interface IP'
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -2528,16 +2434,10 @@
   positions:
     'Regression Workflow 8: Payload Extraction with Operations': [-348, -240]
     'Regression Workflow B: Napalm getters validation': [581, 136]
-    '[Regression Workflow F S1: Subworkflow of Workflow] Regression Workflow 8: Payload Extraction with Operations': [
-      36, -116]
-    '[Regression Workflow F S1: Subworkflow of Workflow] Regression Workflow B: Napalm getters validation': [
-      623, 117]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: 'Getters Workflow: Interface IP'
   send_notification: false
   send_notification_method: mail
-  shared: true
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -2562,6 +2462,7 @@
   driver: eos
   events: []
   getters: [get_mac_address_table]
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -2573,8 +2474,7 @@
   max_processes: 50
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow B: Napalm getters validation] Getters Workflow: MAC
-    address'
+  name: 'Getters Workflow: MAC address'
   negative_logic: true
   notification_header: ''
   number_of_retries: 0
@@ -2583,14 +2483,10 @@
   pools: []
   positions:
     'Regression Workflow B: Napalm getters validation': [-45, 144]
-    '[Regression Workflow F S1: Subworkflow of Workflow] Regression Workflow B: Napalm getters validation': [
-      -63, 147]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: 'Getters Workflow: MAC address'
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -2615,6 +2511,7 @@
   driver: eos
   events: []
   getters: [get_facts]
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -2626,8 +2523,7 @@
   max_processes: 50
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow B: Napalm getters validation] Getters Workflow: get
-    facts failed match'
+  name: 'Getters Workflow: get facts failed match'
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -2636,14 +2532,10 @@
   pools: []
   positions:
     'Regression Workflow B: Napalm getters validation': [535, -147]
-    '[Regression Workflow F S1: Subworkflow of Workflow] Regression Workflow B: Napalm getters validation': [
-      521, -133]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: 'Getters Workflow: get facts failed match'
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -2667,6 +2559,7 @@
   dict_match: {host: '{{device.ip_address}}', unreachable: 0, use_ssl: true}
   display_only_failed_nodes: false
   events: []
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -2678,8 +2571,7 @@
   max_processes: 50
   maximum_runs: 2
   multiprocessing: false
-  name: '[Regression Workflow 6: Ansible with Validation] Ansible Workflow: Arista
-    show version'
+  name: 'Ansible Workflow: Arista show version'
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -2693,10 +2585,8 @@
     'Regression Workflow B: Napalm getters validation': [-30, 126]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: 'Ansible Workflow: Arista show version'
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -2718,6 +2608,7 @@
   dict_match: {}
   display_only_failed_nodes: false
   events: []
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -2729,8 +2620,7 @@
   max_processes: 50
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow 6: Ansible with Validation] Ansible Workflow: Arista
-    show configuration (regex match)'
+  name: 'Ansible Workflow: Arista show configuration (regex match)'
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -2743,10 +2633,8 @@
     'Regression Workflow 6: Ansible with Validation': [179, -62]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: 'Ansible Workflow: Arista show configuration (regex match)'
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -2768,6 +2656,7 @@
   dict_match: {action: debug, changed: false, failed: false}
   display_only_failed_nodes: false
   events: []
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -2779,8 +2668,7 @@
   max_processes: 50
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow 6: Ansible with Validation] Ansible Workflow: Arista
-    show configuration (dict match)'
+  name: 'Ansible Workflow: Arista show configuration (dict match)'
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -2793,10 +2681,8 @@
     'Regression Workflow 6: Ansible with Validation': [486, 173]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: 'Ansible Workflow: Arista show configuration (dict match)'
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -2829,6 +2715,7 @@
   expect_string: ''
   fast_cli: false
   global_delay_factor: 1.0
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -2840,7 +2727,7 @@
   max_processes: 10
   maximum_runs: 1
   multiprocessing: true
-  name: '[Regression Workflow C: Advanced multiprocessing] Show version with multiprocessing'
+  name: Show version with multiprocessing
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -2851,10 +2738,8 @@
     'Regression Workflow F: Workflow of Workflows': [678, 52]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: Show version with multiprocessing
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   start_new_connection: false
@@ -2892,6 +2777,7 @@
   expect_string: ''
   fast_cli: true
   global_delay_factor: 1.0
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -2913,10 +2799,8 @@
     'Regression Workflow E: Iteration Targets': [396, -182]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: Iterated_netmiko_service bis
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   start_new_connection: false
@@ -2954,6 +2838,7 @@
   expect_string: ''
   fast_cli: true
   global_delay_factor: 1.0
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -2965,8 +2850,7 @@
   max_processes: 5
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow E: Iteration Targets] Iteration Targets Workflow - Test
-    1'
+  name: Iteration Targets Workflow - Test 1
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -2976,10 +2860,8 @@
     'Regression Workflow E: Iteration Targets': [240, -144]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: Iteration Targets Workflow - Test 1
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   start_new_connection: false
@@ -3017,6 +2899,7 @@
   expect_string: ''
   fast_cli: true
   global_delay_factor: 1.0
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -3028,8 +2911,7 @@
   max_processes: 5
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow E: Iteration Targets] Iteration Target Workflow - Test
-    2'
+  name: Iteration Target Workflow - Test 2
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -3039,10 +2921,8 @@
     'Regression Workflow E: Iteration Targets': [572, -4]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: Iteration Target Workflow - Test 2
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   start_new_connection: false
@@ -3080,6 +2960,7 @@
   expect_string: ''
   fast_cli: true
   global_delay_factor: 1.0
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: get_var("Derived Devices", device=device.name)
@@ -3091,8 +2972,7 @@
   max_processes: 5
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow E: Iteration Targets] Iteration Target Workflow - Test
-    3'
+  name: Iteration Target Workflow - Test 3
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -3102,10 +2982,8 @@
     'Regression Workflow E: Iteration Targets': [556, 123]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: Iteration Target Workflow - Test 3
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   start_new_connection: false
@@ -3131,6 +3009,7 @@
   dict_match: {}
   display_only_failed_nodes: true
   events: []
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -3142,8 +3021,7 @@
   max_processes: 5
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow 7: Payload Extraction & Validation] Payload Workflow:
-    Validate text via payload'
+  name: 'Payload Workflow: Validate text via payload'
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -3151,15 +3029,11 @@
   pools: []
   positions:
     'Regression Workflow 7: Payload Extraction & Validation': [776, 146]
-    '[Regression Workflow F S1: Subworkflow of Workflow] Regression Workflow 7: Payload Extraction & Validation': [
-      828, 172]
   push_to_git: false
   query: get_var("textfsm_variable", device=device.name)[0][1]
   result_postprocessing: ''
-  scoped_name: 'Payload Workflow: Validate text via payload'
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -3181,6 +3055,7 @@
     value: [1.1.1.1, 2.2.2.2, 3.3.3.3]
   display_only_failed_nodes: true
   events: []
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -3192,8 +3067,7 @@
   max_processes: 5
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow 7: Payload Extraction & Validation] Payload Workflow:
-    Validate dict via payload'
+  name: 'Payload Workflow: Validate dict via payload'
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -3201,15 +3075,11 @@
   pools: []
   positions:
     'Regression Workflow 7: Payload Extraction & Validation': [708, -114]
-    '[Regression Workflow F S1: Subworkflow of Workflow] Regression Workflow 7: Payload Extraction & Validation': [
-      764, -87]
   push_to_git: false
   query: get_var("regex_variable", device=device.name)
   result_postprocessing: ''
-  scoped_name: 'Payload Workflow: Validate dict via payload'
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -3230,6 +3100,7 @@
   dict_match: {}
   display_only_failed_nodes: false
   events: []
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -3241,8 +3112,7 @@
   max_processes: 50
   maximum_runs: 1
   multiprocessing: true
-  name: '[Regression Workflow 8: Payload Extraction with Operations] Payload Workflow:
-    Add initial variables'
+  name: 'Payload Workflow: Add initial variables'
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -3250,14 +3120,10 @@
   pools: []
   positions:
     'Regression Workflow 8: Payload Extraction with Operations': [118, -243]
-    '[Regression Workflow F S1: Subworkflow of Workflow] Regression Workflow 8: Payload Extraction with Operations': [
-      459, -120]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: 'Payload Workflow: Add initial variables'
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   source_code: "set_var(\"list\", [1, 2], device=device.name)\r\nset_var(\"dict\"\
@@ -3281,6 +3147,7 @@
   dict_match: {}
   display_only_failed_nodes: false
   events: []
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -3298,8 +3165,7 @@
   max_processes: 50
   maximum_runs: 1
   multiprocessing: true
-  name: '[Regression Workflow 8: Payload Extraction with Operations] Payload Workflow:
-    Extraction 1'
+  name: 'Payload Workflow: Extraction 1'
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -3310,17 +3176,13 @@
   pools: []
   positions:
     'Regression Workflow 8: Payload Extraction with Operations': [619, -236]
-    '[Regression Workflow F S1: Subworkflow of Workflow] Regression Workflow 8: Payload Extraction with Operations': [
-      870, -116]
   push_to_git: false
   query1: 'get_result("Getters Workflow: Interface IP", device=device.name)["negative_logic"]'
   query2: 'get_result("Getters Workflow: Interface IP", device=device.name)["negative_logic"]'
   query3: 'get_result("Getters Workflow: Interface IP", device=device.name)["match"]'
   result_postprocessing: ''
-  scoped_name: 'Payload Workflow: Extraction 1'
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -3344,6 +3206,7 @@
   dict_match: {}
   display_only_failed_nodes: false
   events: []
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -3361,8 +3224,7 @@
   max_processes: 50
   maximum_runs: 1
   multiprocessing: true
-  name: '[Regression Workflow 8: Payload Extraction with Operations] Payload Workflow:
-    Extraction 2'
+  name: 'Payload Workflow: Extraction 2'
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -3373,17 +3235,13 @@
   pools: []
   positions:
     'Regression Workflow 8: Payload Extraction with Operations': [600, 70]
-    '[Regression Workflow F S1: Subworkflow of Workflow] Regression Workflow 8: Payload Extraction with Operations': [
-      876, 224]
   push_to_git: false
   query1: get_result("Start")["state"]["completed"]
   query2: get_result("Start")["logs"]
   query3: get_result("Start")["state"]
   result_postprocessing: ''
-  scoped_name: 'Payload Workflow: Extraction 2'
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -3407,6 +3265,7 @@
   dict_match: {}
   display_only_failed_nodes: false
   events: []
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -3418,8 +3277,7 @@
   max_processes: 50
   maximum_runs: 1
   multiprocessing: true
-  name: '[Regression Workflow 8: Payload Extraction with Operations] Payload Workflow:
-    Validation 1'
+  name: 'Payload Workflow: Validation 1'
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -3427,15 +3285,11 @@
   pools: []
   positions:
     'Regression Workflow 8: Payload Extraction with Operations': [62, 62]
-    '[Regression Workflow F S1: Subworkflow of Workflow] Regression Workflow 8: Payload Extraction with Operations': [
-      522, 241]
   push_to_git: false
   query: get_var("list", device=device.name)
   result_postprocessing: ''
-  scoped_name: 'Payload Workflow: Validation 1'
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -3456,6 +3310,7 @@
   dict_match: {}
   display_only_failed_nodes: false
   events: []
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -3467,8 +3322,7 @@
   max_processes: 50
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow 8: Payload Extraction with Operations] Payload Workflow:
-    Validation 2'
+  name: 'Payload Workflow: Validation 2'
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -3476,15 +3330,11 @@
   pools: []
   positions:
     'Regression Workflow 8: Payload Extraction with Operations': [-565, 68]
-    '[Regression Workflow F S1: Subworkflow of Workflow] Regression Workflow 8: Payload Extraction with Operations': [
-      99, 253]
   push_to_git: false
   query: get_var("dict", device=device.name)
   result_postprocessing: ''
-  scoped_name: 'Payload Workflow: Validation 2'
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -3507,6 +3357,7 @@
   display_only_failed_nodes: false
   events: []
   headers: {}
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -3518,8 +3369,7 @@
   max_processes: 50
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow E: Iteration Targets] Iteration Targets Workflow - Test
-    4'
+  name: Iteration Targets Workflow - Test 4
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -3532,10 +3382,8 @@
   push_to_git: false
   rest_url: http://127.0.0.1:5000/rest/instance/device/{{get_var('iteration_value')}}
   result_postprocessing: ''
-  scoped_name: Iteration Targets Workflow - Test 4
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   time_between_retries: 10
@@ -3559,6 +3407,7 @@
   dict_match: {}
   display_only_failed_nodes: false
   events: []
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -3570,8 +3419,7 @@
   max_processes: 50
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow F S2: Access Variables from Parent Workflow] Variable
-    Access Subworkflow: Access variable from snippet'
+  name: 'Variable Access Subworkflow: Access variable from snippet'
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -3580,14 +3428,10 @@
   positions:
     'Regression Workflow F S2: Access Variables from Parent Workflow': [240, -101]
     'Regression Workflow F: Workflow of Workflows': [-179, 146]
-    '[Regression Workflow F: Workflow of Workflows] Regression Workflow F S2: Access Variables from Parent Workflow': [
-      206, -272]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: 'Variable Access Subworkflow: Access variable from snippet'
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   source_code: "result = {\r\n \"get_var\": get_var(\"Interfaces 2\", device=device.name),\r\
@@ -3624,6 +3468,7 @@
   expect_string: ''
   fast_cli: false
   global_delay_factor: 1.0
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: get_var("Derived Devices", device=device.name)[0]
@@ -3635,8 +3480,7 @@
   max_processes: 50
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow F S2: Access Variables from Parent Workflow] Variable
-    Access Subworkflow: Access variables for iteration'
+  name: 'Variable Access Subworkflow: Access variables for iteration'
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -3644,14 +3488,10 @@
   pools: []
   positions:
     'Regression Workflow F S2: Access Variables from Parent Workflow': [244, 113]
-    '[Regression Workflow F: Workflow of Workflows] Regression Workflow F S2: Access Variables from Parent Workflow': [
-      223, 174]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: 'Variable Access Subworkflow: Access variables for iteration'
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   start_new_connection: false
@@ -3678,6 +3518,7 @@
   dict_match: {}
   display_only_failed_nodes: true
   events: []
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -3704,17 +3545,13 @@
     'Regression Workflow F S1: Subworkflow of Workflow': [200, -205]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: 'Regression Workflow 9: Configurations Backup'
   send_notification: false
   send_notification_method: mail
-  services: ['[Shared] Start', '[Shared] End', '[Regression Workflow 9: Configurations
-      Backup] Push Configurations to Git', '[Regression Workflow 9: Configurations
-      Backup] Configuration Backup (NAPALM)', '[Regression Workflow 9: Configurations
-      Backup] Configuration Backup (Netmiko)']
-  shared: false
+  services: [Start, End, Push Configurations to Git, Configuration Backup (NAPALM),
+    Configuration Backup (Netmiko)]
   skip: false
   skip_query: ''
-  start_services: ['[Shared] Start']
+  start_services: [Start]
   time_between_retries: 10
   type: workflow
   validation_method: none
@@ -3734,6 +3571,7 @@
   dict_match: {}
   display_only_failed_nodes: true
   events: []
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -3793,18 +3631,13 @@
     'Regression Workflow F: Workflow of Workflows': [-423, -31]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: 'Regression Workflow 4: VRF creation and deletion with Netmiko'
   send_notification: false
   send_notification_method: mail
-  services: ['[Shared] Start', '[Shared] End', '[Regression Workflow 4: VRF creation
-      and deletion with Netmiko] netmiko_create_vrf_test', '[Regression Workflow 4:
-      VRF creation and deletion with Netmiko] netmiko_check_vrf_test', '[Regression
-      Workflow 4: VRF creation and deletion with Netmiko] netmiko_delete_vrf_test',
-    '[Shared] Netmiko: Check VRF (test) does not exist']
-  shared: false
+  services: [Start, End, netmiko_create_vrf_test, netmiko_check_vrf_test, netmiko_delete_vrf_test,
+    'Netmiko: Check VRF (test) does not exist']
   skip: false
   skip_query: ''
-  start_services: ['[Shared] Start']
+  start_services: [Start]
   time_between_retries: 10
   type: workflow
   validation_method: none
@@ -3824,6 +3657,7 @@
   dict_match: {}
   display_only_failed_nodes: true
   events: []
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -3837,13 +3671,12 @@
         \ with Napalm\r\n- The connection cache mechanism. Both netmiko and napalm\
         \ connections\r\nmust be closed at the end of the workflow"
       positions: [-217, -229]
-  last_modified: '2019-10-15 22:43:17.458628'
+  last_modified: '2019-10-10 09:44:34.931818'
   mail_recipient: ''
   max_processes: 5
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow F: Workflow of Workflows] Regression Workflow 5: VRF
-    creation and deletion with Napalm'
+  name: 'Regression Workflow 5: VRF creation and deletion with Napalm'
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -3853,18 +3686,13 @@
     'Regression Workflow F: Workflow of Workflows': [152, 75]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: 'Regression Workflow 5: VRF creation and deletion with Napalm'
   send_notification: false
   send_notification_method: mail
-  services: ['[Shared] Start', '[Shared] End', '[Regression Workflow 5: VRF creation
-      and deletion with Napalm] napalm_create_vrf_test', '[Regression Workflow 5:
-      VRF creation and deletion with Napalm] napalm_rollback', '[Regression Workflow
-      5: VRF creation and deletion with Napalm] netmiko_check_vrf_napalm', '[Regression
-      Workflow 5: VRF creation and deletion with Napalm] netmiko_check_no_vrf_napalm']
-  shared: false
+  services: [Start, End, napalm_create_vrf_test, napalm_rollback, netmiko_check_vrf_napalm,
+    netmiko_check_no_vrf_napalm]
   skip: false
   skip_query: ''
-  start_services: ['[Shared] Start']
+  start_services: [Start]
   time_between_retries: 10
   type: workflow
   validation_method: none
@@ -3884,6 +3712,7 @@
   dict_match: {}
   display_only_failed_nodes: true
   events: []
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -3916,17 +3745,13 @@
     'Regression Workflow F: Workflow of Workflows': [464, 224]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: 'Regression Workflow 3: Napalm getters (postprocessing)'
   send_notification: false
   send_notification_method: mail
-  services: ['[Shared] Start', '[Shared] End', '[Shared] NAPALM: Get Facts', '[Shared]
-      NAPALM: Get interfaces', '[Regression Workflow 3: Napalm getters (postprocessing)]
-      get_interfaces_ip', '[Regression Workflow 3: Napalm getters (postprocessing)]
-      get_config', '[Regression Workflow 3: Napalm getters (postprocessing)] process_payload1']
-  shared: false
+  services: [Start, End, 'NAPALM: Get Facts', 'NAPALM: Get interfaces', get_interfaces_ip,
+    get_config, process_payload1]
   skip: false
   skip_query: ''
-  start_services: ['[Shared] Start']
+  start_services: [Start]
   time_between_retries: 10
   type: workflow
   validation_method: none
@@ -3946,6 +3771,7 @@
   dict_match: {}
   display_only_failed_nodes: true
   events: []
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -3953,12 +3779,6 @@
   iteration_values: ''
   iteration_variable_name: iteration_value
   labels:
-    049195bb-61cc-4278-8551-9a464c25dc57:
-      alignment: left
-      content: "Validate the result with the regex : (\\d\\.){3}\\d\r\nThis service\
-        \ uses the actual NAME to retrieve the\r\nresults, here \"Payload Extraction\"\
-        ."
-      positions: [-226, 284]
     0593f20c-240e-4846-b37e-c03bd4630516:
       alignment: left
       content: "After this service, we no longer use the netmiko connection,\r\nso\
@@ -3967,23 +3787,25 @@
         \nThe service is configured with notification enabled, to test service\r\n\
         notification INSIDE a workflow."
       positions: [-334, -185]
-    0677ebc9-5b0b-4b86-9a36-4b16467e352c:
-      alignment: left
-      content: "Check that the results contains the string \"'1.1.1.1'  , '   2.2.2.2','\
-        \    3.3.3.3'\",\r\nwith \"Delete spaces before matching\" set to True.\r\n\
-        This service uses the REFERENCE NAME to retrieve the results,\r\nhere \"Routing\
-        \ Table\".\r\n"
-      positions: [-291, -97]
+    20a6a733-4b79-4390-bf2b-ad05dbd6855f:
+      alignment: center
+      content: "Validate the result with the regex :\r\n(\\d\\.){3}\\d"
+      positions: [-262, 273]
     3844a73f-340f-4b7a-9893-50c5b79998d9:
       alignment: center
       content: "Check that the \"textfsm_variable\" in the payload\r\ncan be matched\
         \ with the \"(\\d\\.){3}\\d\" regular expression."
       positions: [794, 255]
+    52d15bff-498b-462d-843c-a23199073858:
+      alignment: center
+      content: "Check that the results contains the dictionary\r\n{\"value\":[\"1.1.1.1\"\
+        ,\"2.2.2.2\",\"3.3.3.3\"]}\r\n"
+      positions: [-352, -84]
     55b1e05d-4d84-4227-8774-65cf7ffd992f:
       alignment: center
       content: "Check that the \"regex_variable\" variable\r\nin the payload contains\
         \ the dictionary\r\n{\"value\":[\"1.1.1.1\",\"2.2.2.2\",\"3.3.3.3\"]}\r\n"
-      positions: [819, -177]
+      positions: [743, -198]
     cf55f702-da90-466f-9ee6-9e207a0b4808:
       alignment: left
       content: "This workflow uses netmiko to run a \"show ip route\", and a \"Payload\
@@ -3996,14 +3818,13 @@
         \ be restarted from both\r\nthe left side (validate via result) and the right\
         \ side (validate via payload) to check that\r\nan older payload / result can\
         \ be retrieved from the database."
-      positions: [239, 54]
-  last_modified: '2019-10-15 22:40:48.571360'
+      positions: [269, 71]
+  last_modified: '2019-10-10 13:53:37.652344'
   mail_recipient: ''
   max_processes: 5
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow F S1: Subworkflow of Workflow] Regression Workflow 7:
-    Payload Extraction & Validation'
+  name: 'Regression Workflow 7: Payload Extraction & Validation'
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -4011,25 +3832,16 @@
   pools: []
   positions:
     'Regression Workflow F S1: Subworkflow of Workflow': [134, -147]
-    '[Regression Workflow F: Workflow of Workflows] Regression Workflow F S1: Subworkflow of Workflow': [
-      213, 172]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: 'Regression Workflow 7: Payload Extraction & Validation'
   send_notification: false
   send_notification_method: mail
-  services: ['[Shared] Start', '[Shared] End', '[Regression Workflow 7: Payload Extraction
-      & Validation] netmiko_show_ip_route', '[Regression Workflow 7: Payload Extraction
-      & Validation] Payload Extraction', '[Regression Workflow 7: Payload Extraction
-      & Validation] Payload Workflow: Validate dict via results', '[Regression Workflow
-      7: Payload Extraction & Validation] Payload Workflow: Validate text via results',
-    '[Regression Workflow 7: Payload Extraction & Validation] Payload Workflow: Validate
-      text via payload', '[Regression Workflow 7: Payload Extraction & Validation]
-      Payload Workflow: Validate dict via payload']
-  shared: false
+  services: [Start, End, netmiko_show_ip_route, Payload Extraction, 'Payload Workflow:
+      Validate dict via results', 'Payload Workflow: Validate text via results', 'Payload
+      Workflow: Validate text via payload', 'Payload Workflow: Validate dict via payload']
   skip: false
   skip_query: ''
-  start_services: ['[Shared] Start']
+  start_services: [Start]
   time_between_retries: 10
   type: workflow
   validation_method: none
@@ -4049,6 +3861,7 @@
   dict_match: {}
   display_only_failed_nodes: true
   events: []
+  hidden: false
   include_link_in_summary: true
   initial_payload: {}
   iteration_devices: ''
@@ -4080,20 +3893,15 @@
   positions: {}
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: 'Regression Workflow F: Workflow of Workflows'
   send_notification: true
   send_notification_method: mail
-  services: ['[Shared] Start', '[Shared] End', '[Regression Workflow F: Workflow of
-      Workflows] Regression Workflow 5: VRF creation and deletion with Napalm', '[Shared]
-      Modify Payload for Iteration', '[Regression Workflow F: Workflow of Workflows]
-      Regression Workflow F S2: Access Variables from Parent Workflow', '[Regression
-      Workflow F: Workflow of Workflows] Regression Workflow F S1: Subworkflow of
-      Workflow', '[Regression Workflow F: Workflow of Workflows] Show interfaces with
-      Netmiko', '[Shared] NAPALM: Get interfaces']
-  shared: false
+  services: [Start, End, 'Regression Workflow 5: VRF creation and deletion with Napalm',
+    Modify Payload for Iteration, 'Regression Workflow F S2: Access Variables from
+      Parent Workflow', 'Regression Workflow F S1: Subworkflow of Workflow', Show
+      interfaces with Netmiko, 'NAPALM: Get interfaces']
   skip: false
   skip_query: ''
-  start_services: ['[Shared] Start']
+  start_services: [Start]
   time_between_retries: 10
   type: workflow
   validation_method: none
@@ -4113,6 +3921,7 @@
   dict_match: {}
   display_only_failed_nodes: false
   events: []
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -4139,17 +3948,14 @@
   positions: {}
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: 'Regression Workflow 2: Separate Failure - Success paths'
   send_notification: false
   send_notification_method: mail
-  services: ['[Shared] Start', '[Shared] End', '[Shared] NAPALM: Get Facts', '[Shared]
-      REST API: call *is_alive* endpoint', '[Shared] Netmiko: Check VRF (test) does
-      not exist', '[Shared] Example Service (does nothing)', '[Shared] NAPALM: Get
-      interfaces']
-  shared: false
+  services: [Start, End, 'NAPALM: Get Facts', 'REST API: call *is_alive* endpoint',
+    'Netmiko: Check VRF (test) does not exist', Example Service (does nothing), 'NAPALM:
+      Get interfaces']
   skip: false
   skip_query: ''
-  start_services: ['[Shared] Start']
+  start_services: [Start]
   time_between_retries: 10
   type: workflow
   validation_method: none
@@ -4169,6 +3975,7 @@
   dict_match: {}
   display_only_failed_nodes: false
   events: []
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -4195,16 +4002,13 @@
   positions: {}
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: 'Regression Workflow D: Prompts'
   send_notification: false
   send_notification_method: mail
-  services: ['[Shared] Start', '[Shared] End', '[Regression Workflow D: Prompts] Test
-      Netmiko Prompt Service', '[Regression Workflow D: Prompts] Test netmiko prompts
-      pass', '[Shared] REST API: call *is_alive* endpoint']
-  shared: false
+  services: [Start, End, Test Netmiko Prompt Service, Test netmiko prompts pass, 'REST
+      API: call *is_alive* endpoint']
   skip: false
   skip_query: ''
-  start_services: ['[Shared] Start']
+  start_services: [Start]
   time_between_retries: 10
   type: workflow
   validation_method: none
@@ -4224,6 +4028,7 @@
   dict_match: {}
   display_only_failed_nodes: false
   events: []
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -4258,20 +4063,14 @@
   positions: {}
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: 'Regression Workflow A: get_var, set_var, get_result'
   send_notification: false
   send_notification_method: mail
-  services: ['[Shared] Start', '[Shared] End', '[Regression Workflow A: get_var, set_var,
-      get_result] Modify payload (no device)', '[Regression Workflow A: get_var, set_var,
-      get_result] Modify payload (per device)', '[Regression Workflow A: get_var,
-      set_var, get_result] Show vrf with payload helper', '[Regression Workflow A:
-      get_var, set_var, get_result] Show vrf with python query', '[Shared] REST API:
-      call *is_alive* endpoint', '[Regression Workflow A: get_var, set_var, get_result]
-      show runtime with get_result helper']
-  shared: false
+  services: [Start, End, Modify payload (no device), Modify payload (per device),
+    Show vrf with payload helper, Show vrf with python query, 'REST API: call *is_alive*
+      endpoint', show runtime with get_result helper]
   skip: false
   skip_query: ''
-  start_services: ['[Shared] Start']
+  start_services: [Start]
   time_between_retries: 10
   type: workflow
   validation_method: none
@@ -4291,6 +4090,7 @@
   dict_match: {}
   display_only_failed_nodes: false
   events: []
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -4313,13 +4113,13 @@
       content: "Dictionary Equality Validation: {\"is_alive\":{\"is_alive\":true}}\r\
         \nWashington must pass, but Austin will fail (napalm timeout has\r\nbeen brought\
         \ down to 1 to not wait too long).\r\n"
-      positions: [-396, -179]
+      positions: [-380, -224]
     4d62e069-5dfd-4e6d-b418-8c273a750b06:
       alignment: left
       content: "This workflow is running on two devices: Washington (vEOS) and Austin\
         \ (dummy).\r\nIt uses NAPALM to retrieve data from a device and the validation\
         \ mechanism.\r\nTo be tested with and without multiprocessing."
-      positions: [-48, 37]
+      positions: [-13, 4]
     a5c335bc-dced-4512-b5bc-1149ea7eec73:
       alignment: left
       content: "Dictionary Inclusion Validation:\r\n{\"fqdn\":\"localhost\",\"uptime\"\
@@ -4333,13 +4133,12 @@
         \ match, but the negative logic\r\nis set to True, so the resulting value\
         \ is a success."
       positions: [-51, 226]
-  last_modified: '2019-10-15 22:43:03.629751'
+  last_modified: '2019-10-04 10:46:04.750921'
   mail_recipient: ''
   max_processes: 5
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow F S1: Subworkflow of Workflow] Regression Workflow B:
-    Napalm getters validation'
+  name: 'Regression Workflow B: Napalm getters validation'
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -4347,23 +4146,16 @@
   pools: []
   positions:
     'Regression Workflow F S1: Subworkflow of Workflow': [678, 11]
-    '[Regression Workflow F: Workflow of Workflows] Regression Workflow F S1: Subworkflow of Workflow': [
-      -200, -194]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: 'Regression Workflow B: Napalm getters validation'
   send_notification: false
   send_notification_method: mail
-  services: ['[Shared] Start', '[Shared] End', '[Regression Workflow B: Napalm getters
-      validation] Getters Workflow: is alive', '[Regression Workflow B: Napalm getters
-      validation] Getters Workflow: get facts', '[Shared] Getters Workflow: Interface
-      IP', '[Regression Workflow B: Napalm getters validation] Getters Workflow: MAC
-      address', '[Regression Workflow B: Napalm getters validation] Getters Workflow:
+  services: [Start, End, 'Getters Workflow: is alive', 'Getters Workflow: get facts',
+    'Getters Workflow: Interface IP', 'Getters Workflow: MAC address', 'Getters Workflow:
       get facts failed match']
-  shared: false
   skip: false
   skip_query: ''
-  start_services: ['[Shared] Start']
+  start_services: [Start]
   time_between_retries: 10
   type: workflow
   validation_method: none
@@ -4383,6 +4175,7 @@
   dict_match: {}
   display_only_failed_nodes: false
   events: []
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -4430,18 +4223,14 @@
   positions: {}
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: 'Regression Workflow 6: Ansible with Validation'
   send_notification: false
   send_notification_method: mail
-  services: ['[Shared] Start', '[Shared] End', '[Regression Workflow 6: Ansible with
-      Validation] Ansible Workflow: Arista show version', '[Regression Workflow 6:
-      Ansible with Validation] Ansible Workflow: Arista show configuration (regex
-      match)', '[Regression Workflow 6: Ansible with Validation] Ansible Workflow:
-      Arista show configuration (dict match)']
-  shared: false
+  services: [Start, End, 'Ansible Workflow: Arista show version', 'Ansible Workflow:
+      Arista show configuration (regex match)', 'Ansible Workflow: Arista show configuration
+      (dict match)']
   skip: false
   skip_query: ''
-  start_services: ['[Shared] Start']
+  start_services: [Start]
   time_between_retries: 10
   type: workflow
   validation_method: none
@@ -4463,6 +4252,7 @@
   dict_match: {}
   display_only_failed_nodes: false
   events: []
+  hidden: false
   include_link_in_summary: false
   initial_payload: {mode: LAB}
   iteration_devices: ''
@@ -4498,17 +4288,13 @@
   positions: {}
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: 'Regression Workflow C: Advanced multiprocessing'
   send_notification: false
   send_notification_method: mail
-  services: ['[Shared] Start', '[Shared] End', '[Shared] Example Service (does nothing)',
-    '[Regression Workflow C: Advanced multiprocessing] Show version with multiprocessing',
-    '[Shared] REST API: call *is_alive* endpoint', '[Regression Workflow C: Advanced
-      multiprocessing] napalm_configure_bgp_1']
-  shared: false
+  services: [Start, End, Example Service (does nothing), Show version with multiprocessing,
+    'REST API: call *is_alive* endpoint', napalm_configure_bgp_1]
   skip: false
   skip_query: ''
-  start_services: ['[Shared] Start']
+  start_services: [Start, Example Service (does nothing)]
   time_between_retries: 10
   type: workflow
   validation_method: none
@@ -4528,6 +4314,7 @@
   dict_match: {}
   display_only_failed_nodes: false
   events: []
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -4584,19 +4371,14 @@
   positions: {}
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: 'Regression Workflow E: Iteration Targets'
   send_notification: false
   send_notification_method: mail
-  services: ['[Shared] Start', '[Shared] End', '[Shared] Modify Payload for Iteration',
-    '[Regression Workflow E: Iteration Targets] Iteration Target Workflow - Test 2',
-    '[Regression Workflow E: Iteration Targets] Iteration Targets Workflow - Test
-      1', '[Regression Workflow E: Iteration Targets] Iteration Target Workflow -
-      Test 3', '[Regression Workflow E: Iteration Targets] Iteration Targets Workflow
-      - Test 4']
-  shared: false
+  services: [Start, End, Modify Payload for Iteration, Iteration Target Workflow -
+      Test 2, Iteration Targets Workflow - Test 1, Iteration Target Workflow - Test
+      3, Iteration Targets Workflow - Test 4]
   skip: false
   skip_query: ''
-  start_services: ['[Shared] Start']
+  start_services: [Start]
   time_between_retries: 10
   type: workflow
   validation_method: none
@@ -4616,6 +4398,7 @@
   dict_match: {}
   display_only_failed_nodes: false
   events: []
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -4623,13 +4406,12 @@
   iteration_values: ''
   iteration_variable_name: iteration_value
   labels: {}
-  last_modified: '2019-10-15 22:41:39.597390'
+  last_modified: '2019-10-02 10:20:38.196859'
   mail_recipient: ''
   max_processes: 5
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow F S1: Subworkflow of Workflow] Regression Workflow 8:
-    Payload Extraction with Operations'
+  name: 'Regression Workflow 8: Payload Extraction with Operations'
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -4637,24 +4419,16 @@
   pools: []
   positions:
     'Regression Workflow F S1: Subworkflow of Workflow': [135, 187]
-    '[Regression Workflow F: Workflow of Workflows] Regression Workflow F S1: Subworkflow of Workflow': [
-      530, -139]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: 'Regression Workflow 8: Payload Extraction with Operations'
   send_notification: false
   send_notification_method: mail
-  services: ['[Shared] Start', '[Shared] End', '[Shared] Getters Workflow: Interface
-      IP', '[Regression Workflow 8: Payload Extraction with Operations] Payload Workflow:
-      Add initial variables', '[Regression Workflow 8: Payload Extraction with Operations]
-      Payload Workflow: Extraction 1', '[Regression Workflow 8: Payload Extraction
-      with Operations] Payload Workflow: Extraction 2', '[Regression Workflow 8: Payload
-      Extraction with Operations] Payload Workflow: Validation 1', '[Regression Workflow
-      8: Payload Extraction with Operations] Payload Workflow: Validation 2']
-  shared: false
+  services: [Start, End, 'Getters Workflow: Interface IP', 'Payload Workflow: Add
+      initial variables', 'Payload Workflow: Extraction 1', 'Payload Workflow: Extraction
+      2', 'Payload Workflow: Validation 1', 'Payload Workflow: Validation 2']
   skip: false
   skip_query: ''
-  start_services: ['[Shared] Start']
+  start_services: [Start]
   time_between_retries: 10
   type: workflow
   validation_method: none
@@ -4674,6 +4448,7 @@
   dict_match: {}
   display_only_failed_nodes: false
   events: []
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -4681,13 +4456,12 @@
   iteration_values: ''
   iteration_variable_name: iteration_value
   labels: {}
-  last_modified: '2019-10-15 22:43:42.810632'
+  last_modified: '2019-10-05 10:12:02.348277'
   mail_recipient: ''
   max_processes: 5
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow F: Workflow of Workflows] Regression Workflow F S2:
-    Access Variables from Parent Workflow'
+  name: 'Regression Workflow F S2: Access Variables from Parent Workflow'
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -4697,17 +4471,13 @@
     'Regression Workflow F: Workflow of Workflows': [164, 375]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: 'Regression Workflow F S2: Access Variables from Parent Workflow'
   send_notification: false
   send_notification_method: mail
-  services: ['[Shared] Start', '[Shared] End', '[Regression Workflow F S2: Access
-      Variables from Parent Workflow] Variable Access Subworkflow: Access variable
-      from snippet', '[Regression Workflow F S2: Access Variables from Parent Workflow]
-      Variable Access Subworkflow: Access variables for iteration']
-  shared: false
+  services: [Start, End, 'Variable Access Subworkflow: Access variable from snippet',
+    'Variable Access Subworkflow: Access variables for iteration']
   skip: false
   skip_query: ''
-  start_services: ['[Shared] Start']
+  start_services: [Start]
   time_between_retries: 10
   type: workflow
   validation_method: none
@@ -4727,6 +4497,7 @@
   dict_match: {}
   display_only_failed_nodes: false
   events: []
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -4734,13 +4505,12 @@
   iteration_values: ''
   iteration_variable_name: iteration_value
   labels: {}
-  last_modified: '2019-10-15 22:43:36.466235'
+  last_modified: '2019-10-05 10:07:15.160952'
   mail_recipient: ''
   max_processes: 5
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow F: Workflow of Workflows] Regression Workflow F S1:
-    Subworkflow of Workflow'
+  name: 'Regression Workflow F S1: Subworkflow of Workflow'
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -4750,18 +4520,14 @@
     'Regression Workflow F: Workflow of Workflows': [-655, 369]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: 'Regression Workflow F S1: Subworkflow of Workflow'
   send_notification: false
   send_notification_method: mail
-  services: ['[Shared] Start', '[Shared] End', '[Regression Workflow F S1: Subworkflow
-      of Workflow] Regression Workflow 8: Payload Extraction with Operations', '[Regression
-      Workflow F S1: Subworkflow of Workflow] Regression Workflow B: Napalm getters
-      validation', '[Regression Workflow F S1: Subworkflow of Workflow] Regression
-      Workflow 7: Payload Extraction & Validation']
-  shared: false
+  services: [Start, End, 'Regression Workflow 8: Payload Extraction with Operations',
+    'Regression Workflow B: Napalm getters validation', 'Regression Workflow 7: Payload
+      Extraction & Validation']
   skip: false
   skip_query: ''
-  start_services: ['[Shared] Start']
+  start_services: [Start]
   time_between_retries: 10
   type: workflow
   validation_method: none
@@ -4781,6 +4547,7 @@
   dict_match: {}
   display_only_failed_nodes: false
   events: []
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -4808,15 +4575,12 @@
   positions: {}
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: 'Regression Workflow 1: Netmiko with validation and retries'
   send_notification: false
   send_notification_method: mail
-  services: ['[Shared] Start', '[Shared] End', '[Regression Workflow 1: Netmiko with
-      validation and retries] Check VRF (NOVRF) exists']
-  shared: false
+  services: [Start, End, Check VRF (NOVRF) exists]
   skip: false
   skip_query: ''
-  start_services: ['[Shared] Start']
+  start_services: [Start]
   time_between_retries: 10
   type: workflow
   validation_method: none
@@ -4847,6 +4611,7 @@
   expect_string: ''
   fast_cli: false
   global_delay_factor: 1.0
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -4858,8 +4623,7 @@
   max_processes: 50
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow 1: Netmiko with validation and retries] Check VRF (NOVRF)
-    exists'
+  name: Check VRF (NOVRF) exists
   negative_logic: false
   notification_header: ''
   number_of_retries: 2
@@ -4869,10 +4633,8 @@
     'Regression Workflow 1: Netmiko with validation and retries': [250, -172]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: Check VRF (NOVRF) exists
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   start_new_connection: false
@@ -4910,6 +4672,7 @@
   expect_string: ''
   fast_cli: false
   global_delay_factor: 1.0
+  hidden: false
   include_link_in_summary: false
   initial_payload: {}
   iteration_devices: ''
@@ -4921,7 +4684,7 @@
   max_processes: 50
   maximum_runs: 1
   multiprocessing: false
-  name: '[Regression Workflow F: Workflow of Workflows] Show interfaces with Netmiko'
+  name: Show interfaces with Netmiko
   negative_logic: false
   notification_header: ''
   number_of_retries: 0
@@ -4931,10 +4694,8 @@
     'Regression Workflow F: Workflow of Workflows': [-408, 34]
   push_to_git: false
   result_postprocessing: ''
-  scoped_name: Show interfaces with Netmiko
   send_notification: false
   send_notification_method: mail
-  shared: false
   skip: false
   skip_query: ''
   start_new_connection: false

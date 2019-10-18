@@ -105,7 +105,10 @@ class AdministrationController(BaseController):
                     instance_type = (
                         instance.pop("type") if model == "service" else model
                     )
+                    if model == "service":
+                        instance["scoped_name"] = instance["name"]
                     if instance_type == "workflow":
+                        instance.pop("start_services")
                         workflow_services[instance["name"]] = instance.pop("services")
                     try:
                         instance = self.objectify(instance_type, instance)
@@ -119,9 +122,13 @@ class AdministrationController(BaseController):
                         status = "Partial import (see logs)."
         for name, services in workflow_services.items():
             workflow = fetch("workflow", name=name)
-            workflow.services = [
-                fetch("service", name=service_name) for service_name in services
-            ]
+            for service_name in services:
+                try:
+                    workflow.services.append(
+                        fetch("service", name=service_name)
+                    )
+                except Exception as exc:
+                    print(exc)
         Session.commit()
         for edge in workflow_edges:
             for property in ("source", "destination", "workflow"):
@@ -129,6 +136,23 @@ class AdministrationController(BaseController):
             edge.pop("name", None)
             factory("workflow_edge", **edge)
             Session.commit()
+        new_names = {}
+        for service in fetch_all("service"):
+            new_name = new_names[service.name] = service.build_name()
+            service.name = new_name
+        Session.commit()
+        print(new_names)
+        try:
+            for service in fetch_all("service"):
+                for workflow_name in deepcopy(service.positions):
+                    if workflow_name not in new_names:
+                        service.positions.pop(workflow_name)
+                        continue
+                    print(service.name, new_names[workflow_name], service.positions[workflow_name])
+                    service.positions[new_names[workflow_name]] = service.positions[workflow_name]
+        except Exception as exc:
+            info(exc)
+        Session.commit()
         return status
 
     def import_service(self, archive):
