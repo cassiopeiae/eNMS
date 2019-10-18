@@ -136,7 +136,6 @@ class AdministrationController(BaseController):
             edge.pop("name", None)
             factory("workflow_edge", **edge)
             Session.commit()
-        new_names = {}
         for service in fetch_all("service"):
             service.set_name()
         Session.commit()
