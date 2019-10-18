@@ -107,6 +107,7 @@ class Service(AbstractBase):
             workflow = ""
         else:
             workflow = f"[{self.workflows[0].name}] "
+        print(self, f"{workflow}{name or self.scoped_name}")
         return f"{workflow}{name or self.scoped_name}"
 
     def generate_row(self, table):

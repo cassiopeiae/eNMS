@@ -48,6 +48,12 @@ class Workflow(Service):
         if self.name not in end.positions:
             end.positions[self.name] = (500, 0)
 
+    def build_name(self, name=None):
+        name = super().build_name(name)
+        for service in self.services:
+            service.name = service.build_name()
+        return name
+
     def duplicate(self, workflow=None):
         clone = super().duplicate(workflow)
         clone_services = {}
